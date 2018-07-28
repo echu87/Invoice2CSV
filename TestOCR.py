@@ -47,7 +47,6 @@ def folder_to_png(folderpath):
 
 def folder_detect_text():
     png_names = os.listdir(basepath + '\convertedimages')
-    print(png_names)
     for x in png_names:
         detect_text(x)
 
@@ -56,7 +55,8 @@ def folder_detect_text():
 def detect_text(image_name):
     if __name__ == "__main__":
      bucket='zayyer'
-     photo= "pictures\\" + image_name
+     photo= "pictures\\"+ "\\" + image_name
+     print(photo)
      client=boto3.client('rekognition')
 
      response=client.detect_text(Image={'S3Object':{'Bucket':bucket,'Name':photo}})
@@ -77,7 +77,8 @@ def detect_text(image_name):
 
 folder_to_png("E:\Documents\Git\PDF2EXCEL\PDFs")
 upload_pngs()
-folder_detect_text()
+detect_text("CenturyLink-1.png")
+#folder_detect_text()
 
 
 
