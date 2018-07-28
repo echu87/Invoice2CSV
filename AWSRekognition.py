@@ -4,7 +4,7 @@
 import boto3
 if __name__ == "__main__":
  bucket='zayyer'
- photo='3.PNG'
+ photo='CenturyLink-1.png'
  client=boto3.client('rekognition')
 
  response=client.detect_text(Image={'S3Object':{'Bucket':bucket,'Name':photo}})
