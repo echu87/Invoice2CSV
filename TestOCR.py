@@ -8,15 +8,16 @@ s3 = boto3.client('s3')
 basepath = os.path.dirname(os.path.abspath('TestOCR.py'))
 bucket_name = 'zayyer'
 
+
+# saves an image as a png into the ConvertedImages folder
 def pdf_to_png(filepath, save_name):
 
-    #saves an image as a png into the ConvertedImages folder
     file_save = basepath+"\ConvertedImages"
 
     with Image(filename=filepath, resolution=200) as image:
         image.compression_quality = 99
         image.save(filename=file_save + "\\" + save_name)
-    counter +=1
+
 
 
 #goes through all of the png's in the convertedimages folder, and uploads the file to the s3 bucket
@@ -24,13 +25,16 @@ def upload_pngs():
 
     png_names = os.listdir(basepath + '\convertedimages')
     counter = 0
+
     for x in png_names:
         png_path = basepath +  "\convertedimages" + "\\" + x
-        s3.upload_file(png_path, bucket_name, png_names[counter])
+        s3.upload_file(png_path, bucket_name, "pictures//" + png_names[counter])
+        #detect_text(png_names[counter])
         counter+=1
 
+#gets the list of file names in the unconverted pdf folder, and calls pdf_to_png for each item
 def folder_to_png(folderpath):
-    #gets the list of file names in the unconverted pdf folder, and calls pdf_to_png for each item
+
     file_names = os.listdir(basepath+ '\PDFs')
 
     for x in  file_names:
@@ -67,9 +71,9 @@ def detect_text(image_name):
 
 
 
-#folder_to_png("E:\Documents\Git\PDF2EXCEL\PDFs")
-
+folder_to_png("E:\Documents\Git\PDF2EXCEL\PDFs")
 upload_pngs()
+detect_text("3.PNG")
 
 
 #get_num_pages("E:\Documents\Git\PDF2EXCEL\PDFs\CenturyLink.pdf")
