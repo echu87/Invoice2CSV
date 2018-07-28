@@ -3,6 +3,8 @@ from wand.image import Image
 from PyPDF2 import PdfFileReader
 import os
 import boto3
+import time
+
 
 s3 = boto3.client('s3')
 basepath = os.path.dirname(os.path.abspath('TestOCR.py'))
@@ -29,7 +31,7 @@ def upload_pngs():
     for x in png_names:
         png_path = basepath +  "\convertedimages" + "\\" + x
         s3.upload_file(png_path, bucket_name, "pictures//" + png_names[counter])
-        #detect_text(png_names[counter])
+        time.sleep(2)
         counter+=1
 
 #gets the list of file names in the unconverted pdf folder, and calls pdf_to_png for each item
@@ -43,16 +45,18 @@ def folder_to_png(folderpath):
         pdf_to_png(filePath,saveName)
 
 
-def get_num_pages(filepath):
-    calc_page_sum = 0;
-    calc_page_sum += PdfFileReader(filepath, 'rb').getNumPages()
-    print(calc_page_sum)
+def folder_detect_text():
+    png_names = os.listdir(basepath + '\convertedimages')
+    print(png_names)
+    for x in png_names:
+        detect_text(x)
+
 
 
 def detect_text(image_name):
     if __name__ == "__main__":
      bucket='zayyer'
-     photo= image_name
+     photo= "pictures\\" + image_name
      client=boto3.client('rekognition')
 
      response=client.detect_text(Image={'S3Object':{'Bucket':bucket,'Name':photo}})
@@ -73,9 +77,7 @@ def detect_text(image_name):
 
 folder_to_png("E:\Documents\Git\PDF2EXCEL\PDFs")
 upload_pngs()
-detect_text("3.PNG")
+folder_detect_text()
 
 
-#get_num_pages("E:\Documents\Git\PDF2EXCEL\PDFs\CenturyLink.pdf")
-#print(os.listdir('E:\Documents\Git\PDF2EXCEL\PDFs'))
 
