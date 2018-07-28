@@ -56,7 +56,7 @@ def folder_detect_text():
 def detect_text(image_name):
     if __name__ == "__main__":
      bucket='zayyer'
-     photo= "pictures\\" + image_name
+     photo= image_name
      client=boto3.client('rekognition')
 
      response=client.detect_text(Image={'S3Object':{'Bucket':bucket,'Name':photo}})
