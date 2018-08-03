@@ -74,11 +74,31 @@ def detect_text(image_name):
         print ('Parent Id: {}'.format(text['ParentId']))
         print ('Type:' + text['Type'])
 
+#taken from https://alexwlchan.net/2017/07/listing-s3-keys/
+def get_all_s3_keys(bucket):
+
+    """Get a list of all keys in an S3 bucket."""
+    keys = []
+
+    kwargs = {'Bucket': bucket}
+    while True:
+        resp = s3.list_objects_v2(**kwargs)
+        for obj in resp['Contents']:
+            keys.append(obj['Key'])
+
+        try:
+            kwargs['ContinuationToken'] = resp['NextContinuationToken']
+        except KeyError:
+            break
+
+    return keys
 
 
-folder_to_png("E:\Documents\Git\PDF2EXCEL\PDFs")
-upload_pngs()
-detect_text("CenturyLink-1.png")
+print(get_all_s3_keys(bucket_name))
+# folder_to_png("E:\Documents\Git\PDF2EXCEL\PDFs")
+# upload_pngs()
+# detect_text("CenturyLink-1.png")
+
 #folder_detect_text()
 
 
