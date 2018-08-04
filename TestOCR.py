@@ -75,7 +75,7 @@ def detect_text(image_name):
         print ('Type:' + text['Type'])
 
 #taken from https://alexwlchan.net/2017/07/listing-s3-keys/
-def get_all_s3_keys(bucket):
+def delete_all_s3_keys(bucket):
 
     """Get a list of all keys in an S3 bucket."""
     keys = []
@@ -91,10 +91,13 @@ def get_all_s3_keys(bucket):
         except KeyError:
             break
 
-    return keys
+    print(keys)
+    for x in keys:
+        s3.delete_object(Bucket=bucket_name, Key=x)
 
 
-print(get_all_s3_keys(bucket_name))
+
+get_all_s3_keys(bucket_name)
 # folder_to_png("E:\Documents\Git\PDF2EXCEL\PDFs")
 # upload_pngs()
 # detect_text("CenturyLink-1.png")
