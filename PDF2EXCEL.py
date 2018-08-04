@@ -30,7 +30,7 @@ def upload_pngs():
 
     for x in png_names:
         png_path = basepath +  "\convertedimages" + "\\" + x
-        s3.upload_file(png_path, bucket_name, "pictures//" + png_names[counter])
+        s3.upload_file(png_path, bucket_name,  png_names[counter])
         time.sleep(2)
         counter+=1
 
@@ -96,10 +96,10 @@ def delete_all_s3_keys(bucket):
         s3.delete_object(Bucket=bucket_name, Key=x)
 
 
+#folder_to_png("E:\Documents\Git\PDF2EXCEL\PDFs")
+#upload_pngs()
+delete_all_s3_keys(bucket_name)
 
-get_all_s3_keys(bucket_name)
-# folder_to_png("E:\Documents\Git\PDF2EXCEL\PDFs")
-# upload_pngs()
 # detect_text("CenturyLink-1.png")
 
 #folder_detect_text()
