@@ -2,25 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4917b248-c456-44eb-8a9f-c581019bde97" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/ConvertedImages/Frontier-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/ConvertedImages/Frontier-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConvertedImages/Frontier-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/ConvertedImages/Frontier-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConvertedImages/Frontier-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/ConvertedImages/Frontier-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConvertedImages/Frontier-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/ConvertedImages/Frontier-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConvertedImages/Frontier-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/ConvertedImages/Frontier-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConvertedImages/Frontier-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/ConvertedImages/Frontier-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConvertedImages/MCI-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/ConvertedImages/MCI-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConvertedImages/MCI-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/ConvertedImages/MCI-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConvertedImages/MCI-10.png" beforeDir="false" afterPath="$PROJECT_DIR$/ConvertedImages/MCI-10.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConvertedImages/MCI-11.png" beforeDir="false" afterPath="$PROJECT_DIR$/ConvertedImages/MCI-11.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConvertedImages/MCI-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/ConvertedImages/MCI-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConvertedImages/MCI-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/ConvertedImages/MCI-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConvertedImages/MCI-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/ConvertedImages/MCI-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConvertedImages/MCI-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/ConvertedImages/MCI-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConvertedImages/MCI-6.png" beforeDir="false" afterPath="$PROJECT_DIR$/ConvertedImages/MCI-6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConvertedImages/MCI-7.png" beforeDir="false" afterPath="$PROJECT_DIR$/ConvertedImages/MCI-7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConvertedImages/MCI-8.png" beforeDir="false" afterPath="$PROJECT_DIR$/ConvertedImages/MCI-8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConvertedImages/MCI-9.png" beforeDir="false" afterPath="$PROJECT_DIR$/ConvertedImages/MCI-9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestOCR.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestOCR.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/PDF2EXCEL.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PDF2EXCEL.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PDF2EXCEL.py" beforeDir="false" afterPath="$PROJECT_DIR$/PDF2EXCEL.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kivy test HelloWorld/Gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/kivy test HelloWorld/Gui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kivy test HelloWorld/hello_world.kv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kivy test pong/Gui.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kivy test pong/pong.kv" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,9 +18,16 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+<<<<<<< HEAD
     <SUITE FILE_PATH="coverage/PDF2EXCEL$TestOCR.coverage" NAME="TestOCR Coverage Results" MODIFIED="1532745466739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PDF2EXCEL$Gui.coverage" NAME="Gui Coverage Results" MODIFIED="1532744869951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kivy test pong" />
     <SUITE FILE_PATH="coverage/PDF2EXCEL$PDF2EXCEL.coverage" NAME="PDF2EXCEL Coverage Results" MODIFIED="1534966949670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+=======
+    <SUITE FILE_PATH="coverage/PDF2EXCEL$TestOCR.coverage" NAME="TestOCR Coverage Results" MODIFIED="1534881540209" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PDF2EXCEL$Gui.coverage" NAME="Gui Coverage Results" MODIFIED="1534965212054" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kivy test pong" />
+    <SUITE FILE_PATH="coverage/PDF2EXCEL$Gui__1_.coverage" NAME="Gui (1) Coverage Results" MODIFIED="1534965756294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kivy test HelloWorld" />
+    <SUITE FILE_PATH="coverage/PDF2EXCEL$PDF2EXCEL.coverage" NAME="PDF2EXCEL Coverage Results" MODIFIED="1534964635754" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+>>>>>>> 3721c42fb56d2bc0a8927139b150ee513167cb3c
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-1042456690">
@@ -68,6 +64,7 @@
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
     </session>
+<<<<<<< HEAD
     <session id="1884620170">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
@@ -95,15 +92,54 @@
           <entry key="Python" value="9" />
         </counts>
       </usages-collector>
+=======
+    <session id="-2122121940">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="py" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Python" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts" />
+>>>>>>> 3721c42fb56d2bc0a8927139b150ee513167cb3c
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/PDF2EXCEL.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="400">
               <caret line="70" column="42" lean-forward="true" selection-start-line="70" selection-start-column="42" selection-end-line="70" selection-end-column="42" />
+=======
+        <entry file="file://$PROJECT_DIR$/kivy test HelloWorld/Gui.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+>>>>>>> 3721c42fb56d2bc0a8927139b150ee513167cb3c
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -111,6 +147,21 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+=======
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PDF2EXCEL.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+>>>>>>> 3721c42fb56d2bc0a8927139b150ee513167cb3c
     </leaf>
   </component>
   <component name="Git.Settings">
@@ -123,6 +174,10 @@
         <option value="$PROJECT_DIR$/kivy test pong/Gui.py" />
         <option value="$PROJECT_DIR$/TestOCR.py" />
         <option value="$PROJECT_DIR$/PDF2EXCEL.py" />
+<<<<<<< HEAD
+=======
+        <option value="$PROJECT_DIR$/kivy test HelloWorld/Gui.py" />
+>>>>>>> 3721c42fb56d2bc0a8927139b150ee513167cb3c
       </list>
     </option>
   </component>
@@ -150,6 +205,14 @@
               <item name="PDF2EXCEL" type="b2602c69:ProjectViewProjectNode" />
               <item name="PDF2EXCEL" type="462c0819:PsiDirectoryNode" />
             </path>
+<<<<<<< HEAD
+=======
+            <path>
+              <item name="PDF2EXCEL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PDF2EXCEL" type="462c0819:PsiDirectoryNode" />
+              <item name="kivy test HelloWorld" type="462c0819:PsiDirectoryNode" />
+            </path>
+>>>>>>> 3721c42fb56d2bc0a8927139b150ee513167cb3c
           </expand>
           <select />
         </subPane>
@@ -159,7 +222,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/venv" />
+>>>>>>> 3721c42fb56d2bc0a8927139b150ee513167cb3c
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -174,7 +241,33 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Python.PDF2EXCEL">
+=======
+  <component name="RunManager" selected="Python.Gui (1)">
+    <configuration name="Gui (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PDF2EXCEL" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/kivy test HelloWorld" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/kivy test HelloWorld/Gui.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+>>>>>>> 3721c42fb56d2bc0a8927139b150ee513167cb3c
     <configuration name="Gui" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PDF2EXCEL" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -244,13 +337,23 @@
     <list>
       <item itemvalue="Python.TestOCR" />
       <item itemvalue="Python.Gui" />
+<<<<<<< HEAD
+=======
+      <item itemvalue="Python.Gui (1)" />
+>>>>>>> 3721c42fb56d2bc0a8927139b150ee513167cb3c
       <item itemvalue="Python.PDF2EXCEL" />
     </list>
     <recent_temporary>
       <list>
+<<<<<<< HEAD
         <item itemvalue="Python.PDF2EXCEL" />
         <item itemvalue="Python.TestOCR" />
+=======
+        <item itemvalue="Python.Gui (1)" />
+>>>>>>> 3721c42fb56d2bc0a8927139b150ee513167cb3c
         <item itemvalue="Python.Gui" />
+        <item itemvalue="Python.PDF2EXCEL" />
+        <item itemvalue="Python.TestOCR" />
       </list>
     </recent_temporary>
   </component>
@@ -268,16 +371,28 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.096481875" />
+=======
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
+>>>>>>> 3721c42fb56d2bc0a8927139b150ee513167cb3c
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
+<<<<<<< HEAD
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.329718" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997879" />
+=======
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32939914" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39914164" />
+>>>>>>> 3721c42fb56d2bc0a8927139b150ee513167cb3c
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -340,6 +455,7 @@
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/kivy/uix/widget.py" />
     <entry file="file://$USER_HOME$/.PyCharm2018.2/system/python_stubs/54411316/builtins.py" />
     <entry file="file://$PROJECT_DIR$/TestOCR.py" />
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/kivy test pong/Gui.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="143">
@@ -347,25 +463,57 @@
           <folding>
             <element signature="e#0#24#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
+=======
     <entry file="file://$PROJECT_DIR$/kivy test pong/pong.kv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+        <state relative-caret-position="850">
+          <caret line="50" column="31" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
+>>>>>>> 3721c42fb56d2bc0a8927139b150ee513167cb3c
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PDF2EXCEL.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="149">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+=======
+        <state relative-caret-position="408">
+          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+>>>>>>> 3721c42fb56d2bc0a8927139b150ee513167cb3c
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PDF2EXCEL.py">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="400">
           <caret line="70" column="42" lean-forward="true" selection-start-line="70" selection-start-column="42" selection-end-line="70" selection-end-column="42" />
+=======
+        <state relative-caret-position="85">
+          <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+>>>>>>> 3721c42fb56d2bc0a8927139b150ee513167cb3c
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/kivy test HelloWorld/Gui.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+>>>>>>> 3721c42fb56d2bc0a8927139b150ee513167cb3c
   </component>
 </project>
