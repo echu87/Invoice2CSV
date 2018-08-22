@@ -1,6 +1,5 @@
 from __future__ import print_function
 from wand.image import Image
-from PyPDF2 import PdfFileReader
 import os
 import boto3
 import time
