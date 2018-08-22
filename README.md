@@ -8,3 +8,5 @@ pip install AWSCLI
 pip install BOTO3
 pip install wand
 https://legacy.imagemagick.org/script/binary-releases.php#windows x86 version
+pip install Pillow
+
