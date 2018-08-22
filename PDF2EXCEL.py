@@ -1,6 +1,5 @@
 from __future__ import print_function
 from wand.image import Image
-from PyPDF2 import PdfFileReader
 import os
 import boto3
 import time
@@ -54,13 +53,12 @@ def folder_detect_text():
 
 def detect_text(image_name):
     if __name__ == "__main__":
-     bucket='zayyer'
 
-     photo= "pictures\\"+ "\\" + image_name
+     photo= image_name
 
      client=boto3.client('rekognition')
 
-     response=client.detect_text(Image={'S3Object':{'Bucket':bucket,'Name':photo}})
+     response=client.detect_text(Image={'S3Object':{'Bucket':bucket_name,'Name':photo}})
 
      textDetections=response['TextDetections']
      print(response)
@@ -80,7 +78,7 @@ def delete_all_s3_keys(bucket):
     """Get a list of all keys in an S3 bucket."""
     keys = []
 
-    kwargs = {'Bucket': bucket}
+    kwargs = {'Bucket': bucket_name}
     while True:
         resp = s3.list_objects_v2(**kwargs)
         for obj in resp['Contents']:
@@ -98,9 +96,9 @@ def delete_all_s3_keys(bucket):
 
 #folder_to_png("E:\Documents\Git\PDF2EXCEL\PDFs")
 #upload_pngs()
-delete_all_s3_keys(bucket_name)
+#delete_all_s3_keys(bucket_name)
 
-# detect_text("CenturyLink-1.png")
+detect_text("Frontier-0.png")
 
 #folder_detect_text()
 
