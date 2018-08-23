@@ -1,5 +1,6 @@
 from __future__ import print_function
 from wand.image import Image
+from Whitespace_Remover import remove_whitespace
 import os
 import boto3
 import time
@@ -95,6 +96,7 @@ def delete_all_s3_keys(bucket):
 
 
 folder_to_png("E:\Documents\Git\PDF2EXCEL\PDFs")
+
 #upload_pngs()
 #delete_all_s3_keys(bucket_name)
 
