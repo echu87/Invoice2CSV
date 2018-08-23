@@ -15,11 +15,10 @@ def find_rows_with_color(pixels, width, height, colour):
     return rows_found
 
 
-
 def remove_whitespace():
 
     png_names = os.listdir(basepath + '\convertedimages')
-
+    #go through each file in the converted images path, and create a image object for each.
     for x in png_names:
         png_path = basepath + "\convertedimages" + "\\" + x
 
@@ -44,5 +43,22 @@ def remove_whitespace():
                 rows_removed += 1
 
         new_im.save(png_path)
+    resize_image()
 
-remove_whitespace()
+#goes through the entire convertedimages folder, and doubles the size of each image
+def resize_image():
+    png_names = os.listdir(basepath + '\convertedimages')
+    # go through each file in the converted images path, and create a image object for each.
+    for x in png_names:
+        png_path = basepath + "\convertedimages" + "\\" + x
+
+        old_im = Image.open(png_path)
+        if old_im.mode != 'RGB':
+            old_im = old_im.convert('RGB')
+        width, height = old_im.size[0], old_im.size[1]
+
+        old_im = old_im.resize([width*2, height*2])
+        old_im.save(png_path)
+
+
+

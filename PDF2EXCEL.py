@@ -95,14 +95,15 @@ def delete_all_s3_keys(bucket):
         s3.delete_object(Bucket=bucket_name, Key=x)
 
 
-folder_to_png("E:\Documents\Git\PDF2EXCEL\PDFs")
+# folder_to_png("E:\Documents\Git\PDF2EXCEL\PDFs")
+# remove_whitespace()
 
-#upload_pngs()
+upload_pngs()
 #delete_all_s3_keys(bucket_name)
 
 #detect_text("Frontier-0.png")
 
-#folder_detect_text()
+folder_detect_text()
 
 
 
