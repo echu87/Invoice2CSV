@@ -11,3 +11,4 @@ https://legacy.imagemagick.org/script/binary-releases.php#windows x86 version
 pip install Pillow
 install ghostscript; 32 bit version https://www.ghostscript.com/download/gsdnld.html
 
+GO OVER LICENSING BEFORE PUBLISHING
