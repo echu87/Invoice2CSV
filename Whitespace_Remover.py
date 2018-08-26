@@ -62,3 +62,5 @@ def resize_image():
 
 
 
+remove_whitespace()
+resize_image()

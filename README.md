@@ -9,4 +9,5 @@ pip install BOTO3
 pip install wand
 https://legacy.imagemagick.org/script/binary-releases.php#windows x86 version
 pip install Pillow
+install ghostscript; 32 bit version https://www.ghostscript.com/download/gsdnld.html
 
