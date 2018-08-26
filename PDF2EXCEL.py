@@ -96,8 +96,13 @@ def delete_all_s3_keys(bucket):
 
 
 folder_to_png("E:\Documents\Git\PDF2EXCEL\PDFs")
+<<<<<<< Updated upstream
 
 
+=======
+# remove_whitespace()
+
+>>>>>>> Stashed changes
 #upload_pngs()
 #delete_all_s3_keys(bucket_name)
 
