@@ -1,8 +1,10 @@
+Requirements:
 This project has only been tested on Windows
 Use of Python 6 is recommended
 Having visual studio ide is probably good as well
 Tensor flow (gpu support)
-Requirements:
+CUDA® Toolkit 9.0.
+
 This project requires Kivy for gui inegration. 
 install kivy from https://kivy.org/docs/installation/installation-windows.html
 for best result use python 3.5 or higher and install kivy.deps.angle
