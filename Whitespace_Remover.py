@@ -11,6 +11,7 @@ def find_rows_with_color(pixels, width, height, colour):
                 break
         else:
             rows_found.append(y)
+    print()
 
     return rows_found
 
@@ -71,4 +72,3 @@ def remove_whitespace():
 
 
 remove_whitespace()
-resize_image()
