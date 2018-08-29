@@ -4,14 +4,25 @@ basepath = os.path.dirname(os.path.abspath('TestOCR.py'))
 
 def find_rows_with_color(pixels, width, height, colour):
     rows_found=[]
+    verify_rows = []
     #go through the entire picture row by row, if the row only has white pixels, append the row to rows_found array, then return the rows.
+
+    count = 0
     for y in range(height):
         for x in range(width):
             if pixels[x, y] != colour:
+                count=0
+                verify_rows.clear()
                 break
         else:
-            rows_found.append(y)
-    print()
+            if(count>=100):
+                for i in verify_rows:
+                    rows_found.append(i)
+                verify_rows.clear()
+                count = 0
+            else:
+                verify_rows.append(y)
+                count+=1
 
     return rows_found
 
