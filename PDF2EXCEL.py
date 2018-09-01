@@ -1,6 +1,6 @@
 from __future__ import print_function
 from wand.image import Image
-from Whitespace_Remover import remove_whitespace
+#from Whitespace_Remover import remove_whitespace
 import os
 import boto3
 import time
