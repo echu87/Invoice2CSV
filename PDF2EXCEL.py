@@ -23,8 +23,11 @@ def pdf_to_png(filepath, save_name):
     with Image(filename=filepath, resolution=200) as image:
         image.compression_quality = 99
         image.save(filename=indi_folder + "\\" + save_name)
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 8db8e53f895ed8077c1b3874bcbd74fe27447168
 
 #goes through all of the png's in the convertedimages folder, and uploads the file to the s3 bucket
 def upload_pngs():
