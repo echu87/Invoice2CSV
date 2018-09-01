@@ -15,10 +15,14 @@ bucket_name = 'zayyer'
 def pdf_to_png(filepath, save_name):
 
     file_save = basepath+"\ConvertedImages"
+    #make a new individual folder for each pdf
+    if not os.path.exists(file_save +"\\"+ filepath):
+        indi_folder = file_save +"\\"+ save_name.split(".")[0]
+        os.makedirs(indi_folder)
 
     with Image(filename=filepath, resolution=200) as image:
         image.compression_quality = 99
-        image.save(filename=file_save + "\\" + save_name)
+        image.save(filename=indi_folder + "\\" + save_name)
 
 
 
@@ -95,7 +99,7 @@ def delete_all_s3_keys(bucket):
         s3.delete_object(Bucket=bucket_name, Key=x)
 
 
-# folder_to_png("E:\Documents\Git\PDF2EXCEL\PDFs")
+folder_to_png("E:\Documents\Git\PDF2EXCEL\PDFs")
 
 
 # remove_whitespace()
@@ -104,7 +108,7 @@ def delete_all_s3_keys(bucket):
 #upload_pngs()
 #delete_all_s3_keys(bucket_name)
 
-detect_text("Frontier-0.png")
+#detect_text("Frontier-0.png")
 
 #folder_detect_text()
 
