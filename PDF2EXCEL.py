@@ -15,12 +15,14 @@ bucket_name = 'zayyer'
 def pdf_to_png(filepath, save_name):
 
     file_save = basepath+"\ConvertedImages"
+    #make a new individual folder for each pdf
+    if not os.path.exists(file_save +"\\"+ filepath):
+        indi_folder = file_save +"\\"+ save_name.split(".")[0]
+        os.makedirs(indi_folder)
 
     with Image(filename=filepath, resolution=200) as image:
         image.compression_quality = 99
-        image.save(filename=file_save + "\\" + save_name)
-
-
+        image.save(filename=indi_folder + "\\" + save_name)
 
 #goes through all of the png's in the convertedimages folder, and uploads the file to the s3 bucket
 def upload_pngs():
