@@ -1,6 +1,6 @@
 from __future__ import print_function
 from wand.image import Image
-from Whitespace_Remover import remove_whitespace
+#from Whitespace_Remover import remove_whitespace
 import os
 import boto3
 import time
@@ -24,6 +24,17 @@ def pdf_to_png(filepath, save_name):
         image.compression_quality = 99
         image.save(filename=indi_folder + "\\" + save_name)
 
+
+#gets the list of file names in the unconverted pdf folder, and calls pdf_to_png for each item
+def folder_to_png():
+
+    file_names = os.listdir(basepath+ '\PDFs')
+
+    for x in  file_names:
+        filePath = basepath + "\PDFs\\" + x
+        saveName = x.split(".")[0]   +  ".png"
+        pdf_to_png(filePath,saveName)
+
 #goes through all of the png's in the convertedimages folder, and uploads the file to the s3 bucket
 def upload_pngs():
 
@@ -35,16 +46,6 @@ def upload_pngs():
         s3.upload_file(png_path, bucket_name,  png_names[counter])
         time.sleep(2)
         counter+=1
-
-#gets the list of file names in the unconverted pdf folder, and calls pdf_to_png for each item
-def folder_to_png(folderpath):
-
-    file_names = os.listdir(basepath+ '\PDFs')
-
-    for x in  file_names:
-        filePath = basepath + "\PDFs\\" + x
-        saveName = x.split(".")[0]   +  ".png"
-        pdf_to_png(filePath,saveName)
 
 
 def folder_detect_text():
@@ -97,12 +98,10 @@ def delete_all_s3_keys(bucket):
         s3.delete_object(Bucket=bucket_name, Key=x)
 
 
-folder_to_png("E:\Documents\Git\PDF2EXCEL\PDFs")
+folder_to_png()
 
 
-# remove_whitespace()
-
-
+#remove_whitespace()
 #upload_pngs()
 #delete_all_s3_keys(bucket_name)
 

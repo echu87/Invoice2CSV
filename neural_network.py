@@ -1,8 +1,5 @@
-
 import numpy as np
 import tensorflow as tf
-
-
 
 n_input = 7
 n_hidden = 2
@@ -35,7 +32,6 @@ out_act = tf.sigmoid(out)
 
 cost = tf.reduce_mean(tf.abs(tf.subtract(out_act,y)))
 train_step = tf.train.AdadeltaOptimizer(learning_rate=1.0).minimize(cost)
-
 
 
 with tf.Session() as sess:
