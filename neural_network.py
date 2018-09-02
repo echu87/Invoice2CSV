@@ -7,6 +7,8 @@ n_output = 7
 
 stepshow = 1000
 
+
+
 #input for single file array needs to be recreated for everytime
 x_raw = np.array([[4,2,3,8,7,84,4]])
 y_raw = np.array([0,0,0,0,0,1,0])
