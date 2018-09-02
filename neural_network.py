@@ -1,8 +1,5 @@
-
 import numpy as np
 import tensorflow as tf
-
-
 
 n_input = 7
 n_hidden = 2
