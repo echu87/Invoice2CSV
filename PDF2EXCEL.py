@@ -7,7 +7,7 @@ import time
 
 
 s3 = boto3.client('s3')
-basepath = os.path.dirname(os.path.abspath('TestOCR.py'))
+basepath = os.path.dirname(os.path.abspath('PDF2EXCEL.py'))
 bucket_name = 'zayyer'
 
 
@@ -54,28 +54,28 @@ def folder_detect_text():
         detect_text(x)
 
 
-
+#takes a png from s3 bucket, and detects text using amazon rekognition, then it writes the json response to a text file with the name of the png.
 def detect_text(image_name):
     if __name__ == "__main__":
 
-     photo= image_name
-
      client=boto3.client('rekognition')
+     file = open(basepath + "\convertedimages\\" + image_name.split("/")[0]+ ".txt", "w")
 
-     response=client.detect_text(Image={'S3Object':{'Bucket':bucket_name,'Name':photo}})
+     response=client.detect_text(Image={'S3Object':{'Bucket':bucket_name,'Name':image_name}})
 
      textDetections=response['TextDetections']
-     print(response)
-     print('Matching faces')
+     file.write(str(response))
+     file.write('Matching faces')
 
      for text in textDetections:
-        print('Detected text:' + text['DetectedText'])
-        print('Confidence: ' + "{:.2f}".format(text['Confidence']) + "%")
-        print('Id: {}'.format(text['Id']))
+        file.write('Detected text:' + text['DetectedText'])
+        file.write('Confidence: ' + "{:.2f}".format(text['Confidence']) + "%")
+        file.write('Id: {}'.format(text['Id']))
      if 'ParentId' in text:
-        print ('Parent Id: {}'.format(text['ParentId']))
-        print ('Type:' + text['Type'])
+        file.write ('Parent Id: {}'.format(text['ParentId']))
+        file.write('Type:' + text['Type'])
 
+     file.close()
 #taken from https://alexwlchan.net/2017/07/listing-s3-keys/
 def delete_all_s3_keys(bucket):
 
