@@ -97,16 +97,12 @@ def delete_all_s3_keys(bucket):
     for x in keys:
         s3.delete_object(Bucket=bucket_name, Key=x)
 
-
+#pdf_to_png("ds.pdf",'ds.png')
 #folder_to_png()
-
-
 #remove_whitespace()
-#upload_pngs()
+upload_pngs()
 #delete_all_s3_keys(bucket_name)
-
-detect_text("BAPAHA_VERIBUSI1_20161201_2008410791611 J Day/BAPAHA_VERIBUSI1_20161201_2008410791611 J Day-0.png")
-
+#detect_text("ds-0.png")
 #folder_detect_text()
 
 
